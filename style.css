@@ -1,0 +1,164 @@
+/* je travaille sur le header */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#488286;
+}
+
+
+
+header{
+    position: sticky;
+    margin-bottom: 0;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 0 2rem;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.toggle{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100vh;
+    margin: auto;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size: 5rem;
+}
+.icone{
+    margin-left: 5px;
+}
+/*icone footer*/
+.icone1{
+    font-size:1rem;
+    margin-left: 2vh;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+footer{
+   position: absolute;
+    width: 100%;
+    height: 8vh;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 0 2rem;
+}
+.menuFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    list-style: none;
+    width: 100vh;
+
+}
+
+
+
+
+/* le responsive: */
+@media only screen and (max-width: 700px){
+    .toggle{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+    .logo{
+        position: relative;
+        z-index: 20;
+    }
+    .ouvrir {
+        display: block;
+    }
+    .fermer{
+        display: none;
+    }
+    .open .ouvrir{
+        display: none;
+    }
+    .open .fermer{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    .menu li a {
+        font-size: 2rem;
+    }
+   
+    .open .menu{
+        transform: translateX(0);
+    }
+    .icone{
+        font-size: 2rem;
+        
+    }
+    .menuFooter{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 35vh;
+        background: black;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+
+       
+        
+        
+        
+    }
+}
+
+
+
+
+    
+    
+    
+    
+
+
+    
